@@ -1,0 +1,79 @@
+/**
+ * this is the main configuration file of your bit workspace.
+ * for full documentation, please see: https://bit.dev/reference/workspace/workspace-json
+ **/{
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  /**
+   * main configuration of the Bit workspace.
+   **/
+  "teambit.workspace/workspace": {
+    /**
+     * the name of the component workspace. used for development purposes.
+     **/
+    "name": "bit-nimble",
+    /**
+     * set the icon to be shown on the Bit server.
+     **/
+    "icon": "https://static.bit.dev/bit-logo.svg",
+    /**
+     * default directory to place a component during `bit import` and `bit create`.
+     * the following placeholders are available:
+     * name - component name includes namespace, e.g. 'ui/button'.
+     * scopeId - full scope-id includes the owner, e.g. 'teambit.compilation'.
+     * scope - scope name only, e.g. 'compilation'.
+     * owner - owner name in bit.dev, e.g. 'teambit'.
+     **/
+    "defaultDirectory": "{scope}/{name}",
+    /**
+     * default scope for all components in workspace.
+     **/
+    "defaultScope": "bit-nimble.ecommerce",
+    "resolveAspectsFromNodeModules": true,
+    "resolveEnvsFromRoots": true
+  },
+  /**
+   * main configuration for component dependency resolution.
+   **/
+  "teambit.dependencies/dependency-resolver": {
+    /**
+     * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
+     */
+    "packageManager": "teambit.dependencies/pnpm",
+    "policy": {
+      "dependencies": {
+        "@bit-price/envs.mui-env": "^0.0.7",
+        "@bitdev/react.app-types.react-ssr": "^1.1.18",
+        "@bitdev/react.app-types.vite-react": "^1.1.7",
+        "@emotion/cache": "^11.11.0",
+        "@emotion/react": "^11.11.1",
+        "@emotion/server": "^11.11.0",
+        "@emotion/styled": "^11.11.0",
+        "@mui/icons-material": "^5.15.0",
+        "@mui/material": "^5.15.0",
+        "@teambit/defender.eslint-linter": "^1.0.16",
+        "@teambit/defender.jest-tester": "^1.0.13",
+        "@teambit/defender.prettier-formatter": "^1.0.8",
+        "@teambit/dependencies.modules.packages-excluder": "^0.0.68",
+        "@teambit/preview.react-preview": "^1.0.23",
+        "@teambit/react.mounter": "^1.0.3",
+        "@teambit/react.react-env": "^1.0.32",
+        "@teambit/typescript.typescript-compiler": "^2.0.15",
+        "@vitejs/plugin-react": "^4.2.1",
+        "eslint": "^7.32.0",
+        "vite": "^5.0.8"
+      },
+      "peerDependencies": {}
+    },
+    "linkCoreAspects": true,
+    "rootComponents": true
+  },
+  "teambit.workspace/workspace-config-files": {
+    "enableWorkspaceConfigWrite": true
+  },
+  "teambit.generator/generator": {
+    "envs": [
+      "bit-price.envs/mui-env"
+    ]
+  },
+  "bit-nimble.ecommerce/shop-web": {}
+}

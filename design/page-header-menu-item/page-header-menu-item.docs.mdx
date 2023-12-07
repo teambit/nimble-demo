@@ -1,0 +1,13 @@
+## Responsibility
+
+This component provides some basic behaviors for displaying menu items, with consistent styling. It is used to provide both a visible trigger component for a menu, and a slot for the menu itself. However, it is unopinionated about what goes into either slot. It is up to the consumer to provide the appropriate markup and behaviors for the menu trigger and menu content.
+
+**This component is built to be composed to a more constrained API, for opinionated use. Do not use this component directly, unless necessary!**
+
+## Behaviors
+
+- If given an `href` prop, the component will render an `<a>` tag. Otherwise, it will render a `<button>` tag.
+
+## Notes
+
+- The `title` prop can be a string or a component. This is used to control typography of the menu item output. **This prop should not be exposed when composing. It is for design utility.**

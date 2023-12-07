@@ -1,0 +1,33 @@
+---
+    description: A Context component
+    labels: ['context']
+    ---
+
+    import { NimbleProvider } from './nimble-context-provider';
+    import { DisplayLanguage } from './nimble-context.composition';
+
+    ## React Theme Context
+
+    This is a simple [React Context](https://reactjs.org/docs/context.html) shared as a Bit component.
+    Use this component to share data between components without having to pass props down manually at every level.
+
+    ### Component usage
+```tsx
+import React from 'react';
+import {
+  NimbleProvider,
+} from '@org-name/scope-name.context.nimble';
+
+/* demo component */
+const DisplayLanguage = () => {
+  if (language === 'en') return Hi!;
+  return Hola!;
+};
+
+export const BasicUsage = () => {
+  return (
+    <NimbleProvider language="sp">
+    <DisplayLanguage />
+  </NimbleProvider>
+  );
+};
