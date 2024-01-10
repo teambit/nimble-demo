@@ -29,3 +29,8 @@ Each represents a Bit scope. The `ecommerce` scope holds the main application, a
 ### Project Features
 
 The Nimble app is made with React, with MUI for styling. It contains two Bit applications, one built using Webpack and one built using Vite. Both use server-side rendering (SSR) to render the application on the server and send it to the client. The two applications are there simply to show that Bit components can be used in any application, regardless of the build tool or framework.
+
+## Todo
+- [ ] Expand the demo to include more components from different teams.
+- [ ] Make the two applications more explicitely different.
+- [ ] Add a CI/CD pipeline?
