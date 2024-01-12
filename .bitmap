@@ -16,19 +16,99 @@
         "mainFile": "index.ts",
         "rootDir": "ecommerce/blocks/page-header"
     },
+    "checkout-action-item": {
+        "name": "checkout-action-item",
+        "scope": "",
+        "version": "",
+        "defaultScope": "bit-nimble.checkout",
+        "mainFile": "index.ts",
+        "rootDir": "checkout/checkout-action-item",
+        "config": {
+            "bit-nimble.design/envs/mui-env@0.0.1": {},
+            "teambit.envs/envs": {
+                "env": "bit-nimble.design/envs/mui-env"
+            },
+            "teambit.dependencies/dependency-resolver": {
+                "policy": {
+                    "devDependencies": {
+                        "@types/testing-library__jest-dom": "^5.14.9"
+                    }
+                }
+            },
+            "teambit.component/dev-files": {},
+            "teambit.preview/preview": {},
+            "teambit.compositions/compositions": {},
+            "teambit.docs/docs": {},
+            "teambit.pipelines/builder": {},
+            "teambit.harmony/application": {},
+            "teambit.component/renaming": {
+                "renamedFrom": {
+                    "scope": "bit-nimble.ecommerce",
+                    "name": "checkout/checkout-action-item",
+                    "version": "0.0.6"
+                }
+            }
+        }
+    },
+    "checkout-nav-menu-content": {
+        "name": "checkout-nav-menu-content",
+        "scope": "",
+        "version": "",
+        "defaultScope": "bit-nimble.checkout",
+        "mainFile": "index.ts",
+        "rootDir": "checkout/checkout-nav-menu-content",
+        "config": {
+            "bit-nimble.design/envs/mui-env@0.0.1": {},
+            "teambit.envs/envs": {
+                "env": "bit-nimble.design/envs/mui-env"
+            },
+            "teambit.dependencies/dependency-resolver": {},
+            "teambit.component/dev-files": {},
+            "teambit.preview/preview": {},
+            "teambit.compositions/compositions": {},
+            "teambit.docs/docs": {},
+            "teambit.pipelines/builder": {},
+            "teambit.harmony/application": {},
+            "teambit.component/renaming": {
+                "renamedFrom": {
+                    "scope": "bit-nimble.ecommerce",
+                    "name": "checkout/checkout-nav-menu-content",
+                    "version": "0.0.1"
+                }
+            }
+        }
+    },
     "checkout/checkout-action-item": {
         "name": "checkout/checkout-action-item",
         "scope": "bit-nimble.ecommerce",
         "version": "0.0.6",
         "mainFile": "index.ts",
-        "rootDir": "ecommerce/checkout/checkout-action-item"
+        "rootDir": "ecommerce/checkout/checkout-action-item",
+        "config": {
+            "teambit.component/deprecation": {
+                "deprecate": true,
+                "newId": {
+                    "name": "checkout-action-item",
+                    "scope": "bit-nimble.checkout"
+                }
+            }
+        }
     },
     "checkout/checkout-nav-menu-content": {
         "name": "checkout/checkout-nav-menu-content",
         "scope": "bit-nimble.ecommerce",
         "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "ecommerce/checkout/checkout-nav-menu-content"
+        "rootDir": "ecommerce/checkout/checkout-nav-menu-content",
+        "config": {
+            "teambit.component/deprecation": {
+                "deprecate": true,
+                "newId": {
+                    "name": "checkout-nav-menu-content",
+                    "scope": "bit-nimble.checkout"
+                }
+            }
+        }
     },
     "envs/mui-env": {
         "name": "envs/mui-env",

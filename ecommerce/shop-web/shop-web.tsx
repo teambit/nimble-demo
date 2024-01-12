@@ -4,7 +4,7 @@ import { Box, CssBaseline, GlobalStyles, MenuItem } from '@mui/material';
 import { PageHeader } from '@bit-nimble/ecommerce.blocks.page-header';
 import { NimbleProvider } from '@bit-nimble/design.themes.nimble';
 import { supportActionItem } from '@bit-nimble/support.header-action-item';
-import { checkoutActionItem } from '@bit-nimble/ecommerce.checkout.checkout-action-item';
+import { checkoutActionItem } from '@bit-nimble/checkout.checkout-action-item';
 import { createEmotionCache } from './emotion-cache.js';
 
 export function SupportNavMenuContent() {
