@@ -1,5 +1,6 @@
 name: Bit Lane Cleanup
 on:
+  workflow_dispatch:
   pull_request:
     types:
       - closed
