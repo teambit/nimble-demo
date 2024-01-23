@@ -12,157 +12,91 @@
     "blocks/page-header": {
         "name": "blocks/page-header",
         "scope": "bit-nimble.ecommerce",
-        "version": "0.0.8",
+        "version": "65f300f816122cb247a0f725799c89af422f65d4",
         "mainFile": "index.ts",
         "rootDir": "ecommerce/blocks/page-header"
     },
     "checkout-action-item": {
         "name": "checkout-action-item",
-        "scope": "",
-        "version": "",
-        "defaultScope": "bit-nimble.checkout",
+        "scope": "bit-nimble.checkout",
+        "version": "c5be56b751abcc110f40887b24fe14316d37c4cf",
         "mainFile": "index.ts",
-        "rootDir": "checkout/checkout-action-item",
-        "config": {
-            "bit-nimble.design/envs/mui-env@0.0.1": {},
-            "teambit.envs/envs": {
-                "env": "bit-nimble.design/envs/mui-env"
-            },
-            "teambit.dependencies/dependency-resolver": {
-                "policy": {
-                    "devDependencies": {
-                        "@types/testing-library__jest-dom": "^5.14.9"
-                    }
-                }
-            },
-            "teambit.component/dev-files": {},
-            "teambit.preview/preview": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.pipelines/builder": {},
-            "teambit.harmony/application": {},
-            "teambit.component/renaming": {
-                "renamedFrom": {
-                    "scope": "bit-nimble.ecommerce",
-                    "name": "checkout/checkout-action-item",
-                    "version": "0.0.6"
-                }
-            }
-        }
+        "rootDir": "checkout/checkout-action-item"
     },
     "checkout-nav-menu-content": {
         "name": "checkout-nav-menu-content",
-        "scope": "",
-        "version": "",
-        "defaultScope": "bit-nimble.checkout",
+        "scope": "bit-nimble.checkout",
+        "version": "6c41951ede1209da0048cb77f4118571c6fb93c6",
         "mainFile": "index.ts",
-        "rootDir": "checkout/checkout-nav-menu-content",
-        "config": {
-            "bit-nimble.design/envs/mui-env@0.0.1": {},
-            "teambit.envs/envs": {
-                "env": "bit-nimble.design/envs/mui-env"
-            },
-            "teambit.dependencies/dependency-resolver": {},
-            "teambit.component/dev-files": {},
-            "teambit.preview/preview": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.pipelines/builder": {},
-            "teambit.harmony/application": {},
-            "teambit.component/renaming": {
-                "renamedFrom": {
-                    "scope": "bit-nimble.ecommerce",
-                    "name": "checkout/checkout-nav-menu-content",
-                    "version": "0.0.1"
-                }
-            }
-        }
+        "rootDir": "checkout/checkout-nav-menu-content"
     },
     "checkout/checkout-action-item": {
         "name": "checkout/checkout-action-item",
         "scope": "bit-nimble.ecommerce",
-        "version": "0.0.6",
+        "version": "8700f0482d1607c880611bf544d2588d86b9fd6d",
         "mainFile": "index.ts",
-        "rootDir": "ecommerce/checkout/checkout-action-item",
-        "config": {
-            "teambit.component/deprecation": {
-                "deprecate": true,
-                "newId": {
-                    "name": "checkout-action-item",
-                    "scope": "bit-nimble.checkout"
-                }
-            }
-        }
+        "rootDir": "ecommerce/checkout/checkout-action-item"
     },
     "checkout/checkout-nav-menu-content": {
         "name": "checkout/checkout-nav-menu-content",
         "scope": "bit-nimble.ecommerce",
-        "version": "0.0.1",
+        "version": "e563670d6734280094cf837aa8307de2f461a379",
         "mainFile": "index.ts",
-        "rootDir": "ecommerce/checkout/checkout-nav-menu-content",
-        "config": {
-            "teambit.component/deprecation": {
-                "deprecate": true,
-                "newId": {
-                    "name": "checkout-nav-menu-content",
-                    "scope": "bit-nimble.checkout"
-                }
-            }
-        }
+        "rootDir": "ecommerce/checkout/checkout-nav-menu-content"
     },
     "envs/mui-env": {
         "name": "envs/mui-env",
         "scope": "bit-nimble.design",
-        "version": "0.0.1",
+        "version": "77d494fa3bfba2a8518b42cb3f21b7f1b3475ca8",
         "mainFile": "index.ts",
         "rootDir": "design/envs/mui-env"
     },
     "header-action-item": {
         "name": "header-action-item",
         "scope": "bit-nimble.support",
-        "version": "0.0.4",
+        "version": "fde732c14c45b79c39c7b8183e88edff089e17b0",
         "mainFile": "index.ts",
         "rootDir": "support/header-action-item"
     },
     "logo": {
         "name": "logo",
         "scope": "bit-nimble.design",
-        "version": "0.0.5",
+        "version": "61dba195c3fead514ce90dff6353e12769cf3ed6",
         "mainFile": "index.ts",
         "rootDir": "design/logo"
     },
     "page-header-base": {
         "name": "page-header-base",
         "scope": "bit-nimble.design",
-        "version": "0.0.6",
+        "version": "794ecc889abe2d1e39e5e92e3f0f04c117b6ca64",
         "mainFile": "index.ts",
         "rootDir": "design/page-header-base"
     },
     "page-header-menu-item": {
         "name": "page-header-menu-item",
         "scope": "bit-nimble.design",
-        "version": "0.0.4",
+        "version": "4aac26060be16c82ba46914fc0d8bca72a814106",
         "mainFile": "index.ts",
         "rootDir": "design/page-header-menu-item"
     },
     "shop-web": {
         "name": "shop-web",
         "scope": "bit-nimble.ecommerce",
-        "version": "0.0.11",
+        "version": "411310877cedd724d944823759d45ce1653afad3",
         "mainFile": "index.ts",
         "rootDir": "ecommerce/shop-web"
     },
     "shop-web-vite": {
         "name": "shop-web-vite",
         "scope": "bit-nimble.ecommerce",
-        "version": "0.0.4",
+        "version": "c6d4e8864125c5d1a99ecb9f642bbd8403b4929e",
         "mainFile": "index.ts",
         "rootDir": "ecommerce/shop-web-vite"
     },
     "themes/nimble": {
         "name": "themes/nimble",
         "scope": "bit-nimble.design",
-        "version": "0.0.4",
+        "version": "98232618807c2d6c7d3aedc4ac5eb037882c0056",
         "mainFile": "index.ts",
         "rootDir": "design/themes/nimble"
     },
